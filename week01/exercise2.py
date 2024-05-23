@@ -3,6 +3,8 @@ from random import randint
 
 def find_max(numbers):
     """Return max number in a list of whole numbers. O(n)"""
+    if not numbers:
+        return None
     max_number = 0
     for number in numbers:
         if number > max_number:
@@ -12,6 +14,8 @@ def find_max(numbers):
 
 def find_min(numbers):
     """Return min number in a list of whole numbers. O(n)"""
+    if not numbers:
+        return None
     min_number = 100
     for number in numbers:
         if number < min_number:
