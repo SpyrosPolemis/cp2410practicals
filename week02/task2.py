@@ -19,13 +19,6 @@ def find_smallest_index(data_list):
     # Algorithm runs in O(n)
 
 
-print(find_smallest_index([1, 2, -8, 0, 5, 6, 10, 0]))  # outputs: 2
-print(find_smallest_index([1, 2, 3, 0, 4, 5, 6, 7, 8, 0, 9, 10]))  # outputs: 3
-random_numbers = [random.randint(-100, 100) for i in range(100000)]
-print(find_smallest_index(random_numbers))
-print(random_numbers.index(-100))  # test to see that above tests finds the index of -200
-
-
 def find_indices_of_smallest(data_list):
     """
     Find the smallest element in a list
@@ -47,8 +40,16 @@ def find_indices_of_smallest(data_list):
     # Algorithm runs in O(n)
 
 
-print(find_indices_of_smallest([1, 2, -8, 0, 5, 6, 10, 0]))  # outputs: 2
-print(find_indices_of_smallest([1, 2, 3, 0, 4, 5, 6, 7, 8, 0, 9, 10]))  # outputs: 3
-random_numbers = [random.randint(-100, 100) for j in range(100000)]
-print(find_indices_of_smallest(random_numbers))
-print(random_numbers.index(-100))  # test to see that above tests finds the index of -200
+def run_tests():
+    # Test find_smallest_index
+    print(find_smallest_index([1, 2, -8, 0, 5, 6, 10, 0]))  # outputs: 2
+    print(find_smallest_index([1, 2, 3, 0, 4, 5, 6, 7, 8, 0, 9, 10]))  # outputs: 3
+    random_numbers = [random.randint(-100, 100) for i in range(100000)]
+    print(find_smallest_index(random_numbers))
+    print(random_numbers.index(-100))  # test to see that above tests finds the index of -200
+    # Test find_indices_of_smallest
+    print(find_indices_of_smallest([1, 2, -8, 0, 5, 6, 10, 0]))  # outputs: 2
+    print(find_indices_of_smallest([1, 2, 3, 0, 4, 5, 6, 7, 8, 0, 9, 10]))  # outputs: 3
+    random_numbers = [random.randint(-100, 100) for j in range(100000)]
+    print(find_indices_of_smallest(random_numbers))
+    print(random_numbers.index(-100))  # test to see that above tests finds the index of -200
