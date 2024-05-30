@@ -12,3 +12,7 @@ def find_smallest(data_list):
             smallest = i
     return smallest
     # Algorithm runs in O(n)
+
+
+print(find_smallest([1, 2, -8, 0, 5, 6, 10]))  # outputs: -8
+print(find_smallest([1, 2, -8, 0, 5, 6, 10, -100]))  # outputs: -100
